@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F1096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" rowHeight="95" id="c2L-j4-NRt" customClass="ForecastDayCell">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c2L-j4-NRt" id="4RO-eB-eZE">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F52-Kf-C9m">
+                        <rect key="frame" x="238" y="29" width="22" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <color key="textColor" red="1" green="0.07881934669" blue="0.13688674810000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvX-m0-4iX">
+                        <rect key="frame" x="290" y="37" width="10" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ba5-Nv-Yb4">
+                        <rect key="frame" x="158" y="22" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="mCS-h3-1hA"/>
+                            <constraint firstAttribute="height" constant="50" id="msc-WC-kyE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzK-1P-fPT">
+                        <rect key="frame" x="40" y="22" width="63" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="qGa-Iy-Yop"/>
+                            <constraint firstAttribute="height" constant="50" id="rGo-KY-mme"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qGa-Iy-Yop"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.82740095869999997" blue="0.21372053290000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="mzK-1P-fPT" secondAttribute="centerX" id="CcF-dd-Bf0"/>
+                    <constraint firstItem="mzK-1P-fPT" firstAttribute="leading" secondItem="4RO-eB-eZE" secondAttribute="leading" constant="10" id="H09-ca-5yp"/>
+                    <constraint firstAttribute="centerY" secondItem="mzK-1P-fPT" secondAttribute="centerY" id="Jcn-pW-NXn"/>
+                    <constraint firstAttribute="centerY" secondItem="uvX-m0-4iX" secondAttribute="centerY" id="Lke-6k-sxm"/>
+                    <constraint firstAttribute="centerY" secondItem="ba5-Nv-Yb4" secondAttribute="centerY" id="Pyp-I3-hQN"/>
+                    <constraint firstAttribute="centerY" secondItem="F52-Kf-C9m" secondAttribute="centerY" id="Tse-jN-qgz"/>
+                    <constraint firstItem="mzK-1P-fPT" firstAttribute="leading" secondItem="4RO-eB-eZE" secondAttribute="leading" constant="40" id="VOG-0e-yLM"/>
+                    <constraint firstItem="uvX-m0-4iX" firstAttribute="leading" secondItem="F52-Kf-C9m" secondAttribute="trailing" constant="30" id="Xlw-mN-qVo"/>
+                    <constraint firstAttribute="centerX" secondItem="ba5-Nv-Yb4" secondAttribute="centerX" id="ZMd-42-8Ja"/>
+                    <constraint firstItem="F52-Kf-C9m" firstAttribute="leading" secondItem="ba5-Nv-Yb4" secondAttribute="trailing" constant="30" id="pFU-xI-ona"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="CcF-dd-Bf0"/>
+                        <exclude reference="H09-ca-5yp"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dayImage" destination="ba5-Nv-Yb4" id="SMT-hi-VLd"/>
+                <outlet property="lblHighTemp" destination="F52-Kf-C9m" id="vwP-kN-p2D"/>
+                <outlet property="lblLowTemp" destination="uvX-m0-4iX" id="CzH-OF-xu6"/>
+                <outlet property="lbldayofWeek" destination="mzK-1P-fPT" id="lmh-Bg-Mhl"/>
+            </connections>
+            <point key="canvasLocation" x="362" y="253.5"/>
+        </tableViewCell>
+    </objects>
+</document>
